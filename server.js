@@ -12,13 +12,13 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.use("/api/contact", contactRoutes);
-app.use("/api/connect", ConnectRoute);
+app.use("/api/connect", connectRoutes);
 // app.use("/api/payment", paymentRoute);
 
-app.use(cors({
-  origin: "http://localhost:5173",
-  credentials: true
-}));
+// app.use(cors({
+//   origin: "http://localhost:5173",
+//   credentials: true
+// }));
 // App.use(cors());
 
 const PORT = process.env.PORT || 5000;
