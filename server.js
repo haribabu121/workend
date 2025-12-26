@@ -15,6 +15,10 @@ app.use("/api/contact", contactRoutes);
 app.use("/api/connect", connectRoutes);
 // app.use("/api/payment", paymentRoute);
 
+// app.use(cors({
+//   origin: "http://localhost:5173",
+//   credentials: true
+// }));
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`🚀 Server running at http://localhost:${PORT}`));
